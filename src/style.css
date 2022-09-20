@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* for general stylings */
+.nav-btn{
+	background-color: #EFBF37;
+}
+.hero-btn{
+	border-color: #EFBF37;
+	color: #EFBF37;
+}
+.hero-btn:hover{
+	background-color: #EFBF37;
+	color: #000000;
+}
+.main-page{
+	background-image: url("./Img/hero/hero-bg.jpg");
+	background-size: cover;
+}
