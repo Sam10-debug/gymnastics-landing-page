@@ -6,7 +6,7 @@ import woman from '../Img/common/woman.jpg'
 
 function About() {
   return (
-	<section className="about p-4  h-screen">
+	<section className="about p-4 md:h-screen ">
 		<h2 className="py-4 font-bold text-3xl text-center text-white">We are a team of expert gym Instructos</h2>
 		<p className="text-center py-6 md:mx-32 leading-[250%] text-slate-400">You don't want just a gym membership.You want a membership that means something.And that means you need support, expert help and a community.
 		Best Body Fitness isn't just a gym.It's a full service fitness membership made for you
