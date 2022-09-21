@@ -1,6 +1,7 @@
 import MainPage from "./components/MainPage";
 import { useState } from "react";
 import {LoginContext} from './components/Context/Context'
+import About from "./components/About";
 
 function App() {
   const [showMobileNav,setShowMobileNav]=useState(false)
@@ -9,7 +10,8 @@ function App() {
       <div>
         <LoginContext.Provider value={{setShowMobileNav,showMobileNav}}>
 
-        <MainPage />
+        {/* <MainPage /> */}
+        <About />
         </LoginContext.Provider>
       </div>
   );
