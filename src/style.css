@@ -17,8 +17,29 @@
 .main-page{
 	background-image: url("./Img/hero/hero-bg.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+}
+.service{
+	background-image: url("./Img/services/services3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .about{
 	background-image: url("./Img/services/services2.jpg");
 	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (min-width: 768px){
+	.container{
+		margin: 0 auto;
+		width: 70%;
+		height: 1000px;
+		/* background-color: red; */
+		display: grid;
+		place-items: center;
+		grid-template-columns: 50% 50%;
+		grid-row: auto auto;
+		grid-column-gap: 40px;
+	}
 }

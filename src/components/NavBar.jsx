@@ -2,26 +2,29 @@ import React from 'react'
 import logo from '../Img/common/gym-logo.png'
 import { LoginContext } from './Context/Context'
 import {useContext} from 'react'
+import {Link } from 'react-router-dom/cjs/react-router-dom.min'
+
 
 function NavBar() {
 	const {showMobileNav,setShowMobileNav}=useContext(LoginContext)
 	console.log(showMobileNav)
+	
 	const ShowMobileNav=()=>{
 		setShowMobileNav(prev=>!prev)
 	}
   return (
-	<header className="w-full px-2 md:px-0 py-2 md:py-8 items-center justify-center">
+	<header className="w-full px-2  py-4 md:py-8 items-center justify-center sticky top-0 z-50 ">
 		<nav className="flex w-full justify-between items-center">
 			<img src={logo} alt="logo" className="w-8 h-8" />
 			<ul className="hidden md:flex w-1/2 justify-between">
-				<li className=""><a href='#'>About</a></li>
-				<li className=""><a href='#'>Services</a></li>
-				<li className=""><a href='#'>Subscriptions</a></li>
-				<li className=""><a href='#'>About</a></li>
+				<li className=""><Link to='/'>Home</Link></li>
+				<li className=""><Link to='/about'>About</Link></li>
+				<li className=""><Link to='/services'>Services</Link></li>
+				
 	
 			</ul>
 			<button className="hidden md:block nav-btn w-[150px] h-[50px]  font-semibold">Enter</button>
-			<svg onClick={ShowMobileNav} className='md:hidden z-50' width="36px"  height="36px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
+			<svg onClick={ShowMobileNav} className='md:hidden z-[9999]' width="36px"  height="36px" viewBox="0 0 72 72" id="emoji" xmlns="http://www.w3.org/2000/svg">
 			<g id="color"/>
 			<g id="hair"/>
 			<g id="skin"/>

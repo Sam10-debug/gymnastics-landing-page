@@ -10,8 +10,8 @@ function MainPage() {
 	const {showMobileNav,setShowMobileNav}= useContext(LoginContext)
   return (
 	<div className="main-page md:px-8">
-		<NavBar />
-		{showMobileNav&&<MobileNav />}
+		{/* <NavBar /> */}
+		{/* {showMobileNav&&<MobileNav />} */}
 		<HeroSection />
 	</div>
   )
