@@ -3,6 +3,9 @@ import logo from '../Img/common/gym-logo.png'
 import { LoginContext } from './Context/Context'
 import {useContext} from 'react'
 import {Link } from 'react-router-dom/cjs/react-router-dom.min'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 
 function NavBar() {
@@ -12,8 +15,13 @@ function NavBar() {
 	const ShowMobileNav=()=>{
 		setShowMobileNav(prev=>!prev)
 	}
+	useEffect(()=>{
+		AOS.init({duration: 2000})
+	})
+
+
   return (
-	<header className="w-full px-2  py-4 md:py-8 items-center justify-center sticky top-0 z-50 ">
+	<header className="w-full px-2  py-4 md:py-8 items-center justify-center bg-white sticky top-0 z-50 " data-aos="zoom-in-down">
 		<nav className="flex w-full justify-between items-center">
 			<img src={logo} alt="logo" className="w-8 h-8" />
 			<ul className="hidden md:flex w-1/2 justify-between">
