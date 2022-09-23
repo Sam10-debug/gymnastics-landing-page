@@ -21,7 +21,7 @@ function NavBar() {
 
 
   return (
-	<header className="w-full px-2  py-4 md:py-8 items-center justify-center bg-white sticky top-0 z-50 " data-aos="zoom-in-down">
+	<header className="w-full px-2  py-4 md:py-8 items-center justify-center bg-white sticky top-0 z-50 " data-aos="zoom-in">
 		<nav className="flex w-full justify-between items-center">
 			<img src={logo} alt="logo" className="w-8 h-8" />
 			<ul className="hidden md:flex w-1/2 justify-between">
