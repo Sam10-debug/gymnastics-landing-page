@@ -11,7 +11,7 @@ function MobileNav() {
 		AOS.init({duration: 2000})
 	})
   return (
-	<div className="flex flex-col md:hidden w-screen justify-center items-center h-full bg-white absolute top-0 z-10 " data-aos="fade-left">
+	<div className="flex flex-col md:hidden w-screen justify-center items-center h-screen bg-white absolute top-0 z-10 " data-aos="fade-left">
 		<ul className="text-3xl text-center">
 				<li className="my-4" data-aos="fade-left"><Link to='/'>Home</Link></li>
 				<li clLinkssName="my-4" data-aos="fade-right"><Link to='/about'>About</Link></li>
